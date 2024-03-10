@@ -1,0 +1,125 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: linear-gradient(to right, #4bcaff, #348ac7);
+    color: #fff;
+    text-align: center;
+  
+}
+
+.header-title {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero {
+    background-image: url('hero_background.jpg');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.team {
+    text-align: center;
+    
+}
+
+.section-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+}
+
+.team-member {
+    width: 250px;
+    text-align: center;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid #4bcaff;
+}
+
+.team-member-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-member-info {
+    font-size: 16px;
+    color: #555;
+}
+
+.contact {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact-text {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-submit {
+    padding: 10px 20px;
+    background-color: #4bcaff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-submit:hover {
+    background-color: #348ac7;
+}
