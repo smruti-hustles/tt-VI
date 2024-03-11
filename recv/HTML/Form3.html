@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="/CSS/Form1Style.css" rel="stylesheet">
+
+</head>
+<body>
+    <h1 id="heading">Project Information</h1>
+    <hr style="margin-inline: 50px;" >
+    <form id="form3">
+
+        <div class="row">
+          <h1 id="pro1">Project 1</h1>
+
+          <div class="col">
+            <input type="text" class="form-control" id="p1name" placeholder="Project Name">
+          </div>
+          
+        </div>
+
+        <div class="row" style="margin-top:20px;">
+          
+
+          <div class="col">
+            <input type="text" class="form-control" id="p1link" placeholder="Project Link">
+          </div>
+        
+        </div>
+        <div class="row" style="margin-top:20px;">
+            <div class="col">
+
+            <textarea class="form-control" id="p1desc" rows="3" placeholder="Description"></textarea>
+         </div> 
+        </div>
+
+        <div class="row">
+            <h1 id="pro1">Project 2</h1>
+  
+            <div class="col">
+              <input type="text" class="form-control" id="p2name" placeholder="Project Name">
+            </div>
+            
+          </div>
+  
+          <div class="row" style="margin-top:20px;">
+            
+  
+            <div class="col">
+              <input type="text" class="form-control" id="p2link" placeholder="Project Link">
+            </div>
+          
+          </div>
+          <div class="row" style="margin-top:20px;">
+              <div class="col">
+  
+              <textarea class="form-control" id="p2desc" rows="3" placeholder="Description"></textarea>
+           </div> 
+          </div>
+
+
+          <div class="row">
+            <h1 id="pro1">Project 3</h1>
+  
+            <div class="col">
+              <input type="text" class="form-control" id="p3name" placeholder="Project Name">
+            </div>
+            
+          </div>
+  
+          <div class="row" style="margin-top:20px;">
+            
+  
+            <div class="col">
+              <input type="text" class="form-control" id="p3link" placeholder="Project Link">
+            </div>
+          
+          </div>
+          <div class="row" style="margin-top:20px;">
+              <div class="col">
+  
+              <textarea class="form-control" id="p3desc" rows="3" placeholder="Description"></textarea>
+           </div> 
+          </div>
+        
+        <div class="row" style="margin-top:20px;margin-inline: 60px;">
+          <input 
+          type='button' 
+          id='submitbutton' 
+          value='Next' 
+          class="btn btn-primary"
+          style="margin-bottom: 50px;"
+          onclick='clicka();console.log("you used it in HTML")'>
+</div>
+      </form>
+      
+</body>
+<script>
+function clicka(){
+
+    window.localStorage.setItem('p1name',document.getElementById('p1name').value);
+    window.localStorage.setItem('p1link',document.getElementById('p1link').value);
+    window.localStorage.setItem('p1desc',document.getElementById('p1desc').value);
+
+    window.localStorage.setItem('p2name',document.getElementById('p2name').value);
+    window.localStorage.setItem('p2link',document.getElementById('p2link').value);
+    window.localStorage.setItem('p2desc',document.getElementById('p2desc').value);
+
+    window.localStorage.setItem('p3name',document.getElementById('p3name').value);
+    window.localStorage.setItem('p3link',document.getElementById('p3link').value);
+    window.localStorage.setItem('p3desc',document.getElementById('p3desc').value);
+   
+
+   window.location.href = 'Form4.html';
+}
+</script>
+</html>
